@@ -22,8 +22,10 @@ def get_input(query):
 
     {{
         "jobTitle": "Job Title",
-        "jobDetails": "Full time, On site/Remote/Hybrid, Location",
-        "experience": "Experience Range",
+        "jobType":"eg.Full time",
+        "workplace" "remote , onsite...",
+        "jobDetails": "job description... ",
+        "experience": (it should be number),
         "skills": ["Skill1", "Skill2", "Skill3", ...],
         "aboutRole": "A brief description of the role, responsibilities, and desired candidate traits.",
         "responsibilities": ["Responsibility1", "Responsibility2", "Responsibility3", ...],
