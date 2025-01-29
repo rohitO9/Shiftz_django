@@ -26,8 +26,8 @@ def get_input(query):
         "experience": "Experience Range",
         "skills": ["Skill1", "Skill2", "Skill3", ...],
         "aboutRole": "A brief description of the role, responsibilities, and desired candidate traits.",
-        "roleAndResponsibility": ["Responsibility1", "Responsibility2", "Responsibility3", ...],
-        "softSkillsAndEducation": ["Soft Skill1", "Soft Skill2", "Educational Requirement1", ...],
+        "responsibilities": ["Responsibility1", "Responsibility2", "Responsibility3", ...],
+        "education": ["Soft Skill1", "Soft Skill2", "Educational Requirement1", ...],
         "niceToHave": ["Additional Skill1", "Additional Skill2", ...],
         "candidatesWithExperienceAtCompanies": ["Company1", "Company2", "Company3", ...],
         "interviewProcess": ["Stage1", "Stage2", "Stage3", ...]
