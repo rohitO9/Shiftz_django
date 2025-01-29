@@ -37,12 +37,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'corsheaders',  # ✅ Add this line
+
 ]
 EXTERNAL_APPS = [
     'home'
 ]
 INSTALLED_APPS += EXTERNAL_APPS
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # ✅ Add this at the top
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,6 +55,11 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ALLOW_ALL_ORIGINS = True  
+ALLOWED_HOSTS = ['*']  # Allows all hosts (for development)
+
+
 
 ROOT_URLCONF = 'django_learning.urls'
 
